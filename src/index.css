@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root{
+    background: rgb(51 65 85);
+}
+
+*{
+    transition: all ease-in-out .1s;
+}

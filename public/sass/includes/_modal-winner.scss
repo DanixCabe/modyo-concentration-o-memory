@@ -1,0 +1,32 @@
+
+.modal-winner{
+
+    &__text{
+        color: rgb(103 232 249); 
+        text-shadow:  0px 0px 4px rgb(163 230 53), 0px 0px 4px rgb(163 230 53), 0px 0px 4px rgb(163 230 53);
+        span{
+            animation: turnOff 1s linear infinite;
+        }
+
+
+    }
+
+    @keyframes turnOff {
+        0% {
+            opacity: 1;
+        }
+        25% {
+            opacity: .75;
+        }
+        50% {
+            opacity: .5;
+        }
+        75% {
+            opacity: .75;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+}
