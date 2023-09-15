@@ -18,7 +18,7 @@ Concentration or Memory is a game in which you need will find a couple of cards 
 * [Animate CSS](https://animate.style/): Version 4.1.1
 
 ## Installation
-After you clone this repository you need to use these commands.
+### After you clone this repository you need to use these commands.
 
 npm install --global yarn
 
@@ -43,3 +43,11 @@ yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react
 yarn add --dev @testing-library/react @types/jest jest-environment-jsdom
 
 yarn add --dev whatwg-fetch
+
+### Run DEV 
+
+yarn dev
+
+### Run TEST 
+
+yarn test
