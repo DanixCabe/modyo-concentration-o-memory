@@ -21,7 +21,7 @@ export const CardAnimal = ({animal, onFirstImageId, onSecondImageId, firstImage,
     
 
     return (
-        <picture className="section-animals__card-animal  mx-auto w-28 h-36 xs:w-40 xs:h-44 lg:w-48 lg:h-56 bg-gray-100 rounded-md shadow-xl flex items-center justify-center" >
+        <picture className="section-animals__card-animal  mx-auto  w-full h-36 xs:h-44  lg:h-56 bg-gray-100 rounded-md shadow-xl flex items-center justify-center" >
             <img 
                 src={url} 
                 className={`w-full h-full rounded-md section-animals__image-animal ${name} animate__animated animate__fadeIn`} 
