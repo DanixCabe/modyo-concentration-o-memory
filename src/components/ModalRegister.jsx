@@ -17,14 +17,16 @@ export const ModalRegister = ({username, formState, onInputChange}) => {
     }
 
 
-
+    const closeBackDrop = () => {
+        const backdropModal = document.querySelector('[modal-backdrop]');
+        backdropModal.remove();
+    }
 
 
     const onRegisterUser = (event) => {
         event.preventDefault();
-        const backdropModal = document.querySelector('[modal-backdrop]');
         localStorage.setItem("username", formState.username)
-        backdropModal.remove();
+        closeBackDrop();
     }
 
     return (
@@ -43,7 +45,7 @@ export const ModalRegister = ({username, formState, onInputChange}) => {
                         </div>
                         
                         <div className="p-6 space-y-6">
-                            <form onSubmit={onRegisterUser}>
+                            <form onSubmit={onRegisterUser} aria-label='form'>
                                 <input
                                 onChange={onInputChange} 
                                     value={username}
@@ -53,6 +55,7 @@ export const ModalRegister = ({username, formState, onInputChange}) => {
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" 
                                     placeholder="Username" 
                                     required
+                                    aria-label='username'
                                 />
                                 <div className="flex items-center pt-3  border-t border-gray-200 rounded-b ">
                                     <button

@@ -11,7 +11,7 @@ const formData = {
 
 export const ConcentrationOMemoryApp = () => {
     const dispatch = useDispatch();
-    const {animals, isLoading} = useSelector(state => state.animals);
+    const {isLoading} = useSelector(state => state.animals);
     const {username, formState, onInputChange} = useForm(formData);
 
     useEffect(() => {
